@@ -5,7 +5,7 @@
 ## Najważniejsze fakty
 - Platforma: Android (Google Play). Brak wersji na iPhone.
 - Prywatność: brak uprawnienia INTERNET, dane nie opuszczają urządzenia. Systemowa kopia zapasowa Androida może obejmować dane aplikacji, jeśli użytkownik ją włączył.
-- Funkcje: skanowanie aparatem lub ze zdjęcia z galerii, korekta pól przed zapisem, poprawny zapis numerów polskich i zagranicznych, wyszukiwanie po wszystkich polach, branże i filtry, wykrywanie duplikatów, eksport do CSV (Excel, CRM) i vCard, udostępnianie kontaktu, zdjęcie osoby.
+- Funkcje: skanowanie aparatem telefonu, korekta pól przed zapisem z podglądem odczytu OCR, poprawny zapis numerów polskich i zagranicznych, wyszukiwanie po wszystkich polach, branże i filtry, wykrywanie duplikatów, eksport do CSV (Excel, CRM) i vCard, udostępnianie kontaktu, zdjęcie osoby.
 - Dla kogo: networkerzy (BNI, konferencje), zawody zaufania publicznego (prawnicy, doradcy, księgowi, HR), handlowcy w terenie.
 
 ## Linki

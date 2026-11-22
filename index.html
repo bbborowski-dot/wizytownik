@@ -11,6 +11,10 @@
 <meta property="og:title" content="Wizytownik - skaner wizytówek, który nie ma dostępu do internetu">
 <meta property="og:description" content="Skanujesz wizytówkę, sprawdzasz dane, masz kontakt. Rozpoznawanie tekstu na telefonie, zero wysyłania danych. Android, 24,99 zł jednorazowo.">
 <meta property="og:url" content="https://skanerwizytowek.pl/">
+<meta property="og:image" content="https://skanerwizytowek.pl/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#11483A">
 <meta name="msvalidate.01" content="71780EF2C5E09518812DDEE61B073DC2" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,13 +34,14 @@
       "operatingSystem": "Android",
       "applicationCategory": "BusinessApplication",
       "inLanguage": ["pl", "en"],
+      "screenshot": ["https://skanerwizytowek.pl/wizytownik-skanowanie-wizytowki.webp", "https://skanerwizytowek.pl/wizytownik-odczyt-ocr.webp", "https://skanerwizytowek.pl/wizytownik-lista-kontaktow.webp", "https://skanerwizytowek.pl/wizytownik-karta-ze-skanem.webp"],
       "url": "https://skanerwizytowek.pl/",
       "installUrl": "https://play.google.com/store/apps/details?id=pl.wizytownik.app",
       "sameAs": ["https://play.google.com/store/apps/details?id=pl.wizytownik.app"],
       "featureList": [
-        "Skanowanie wizytówek aparatem lub ze zdjęcia z galerii",
+        "Skanowanie wizytówek aparatem telefonu",
         "Rozpoznawanie tekstu (OCR) na urządzeniu, bez internetu",
-        "Korekta danych przed zapisem",
+        "Korekta danych przed zapisem, z podglądem odczytu OCR wiersz po wierszu",
         "Poprawny zapis numerów polskich i zagranicznych",
         "Wyszukiwanie po wszystkich polach i filtrowanie po branży",
         "Wykrywanie duplikatów",
@@ -127,45 +132,14 @@
   .facts div{font-size:14px;color:var(--muted)}
   .facts b{display:block;font-family:var(--serif);font-size:22px;color:var(--ink);font-weight:600}
 
-  /* phones */
-  .phones{position:relative;height:560px}
-  .phone{position:absolute;width:250px;height:520px;border-radius:38px;background:#0d1512;padding:9px;box-shadow:0 30px 60px -20px rgba(17,72,58,.35),0 0 0 1px rgba(0,0,0,.08)}
-  .screen{width:100%;height:100%;border-radius:30px;overflow:hidden;background:#FAFAF7;position:relative;font-family:var(--sans)}
-  .p1{left:0;top:40px;transform:rotate(-5deg)}
-  .p2{left:50%;margin-left:-125px;top:0;z-index:2}
-  .p3{right:0;top:40px;transform:rotate(5deg)}
-  .s-top{padding:18px 16px 8px;font-weight:600;font-size:17px}
-  .s-search{margin:4px 14px 10px;background:#EFEFEA;border-radius:10px;padding:8px 10px;font-size:10px;color:#8a938f}
-  .chips{display:flex;gap:5px;padding:0 14px 10px}
-  .chip{font-size:8.5px;border-radius:20px;padding:3px 8px;border:1px solid #ddd;color:#555}
-  .chip.on{background:var(--g);color:#fff;border-color:var(--g)}
-  .row{display:flex;gap:9px;align-items:center;padding:8px 14px;border-top:1px solid #F0EFEA}
-  .av{width:28px;height:28px;border-radius:50%;background:var(--mint);color:var(--g);font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;flex:none}
-  .av.d{background:var(--g);color:#fff}
-  .row b{display:block;font-size:10.5px;font-weight:600}
-  .row span{display:block;font-size:8.5px;color:#7d8682}
-  .tag{display:inline-block;margin-top:2px;font-size:7.5px;background:var(--mint2);color:var(--g);padding:1px 6px;border-radius:6px}
-  .fab{position:absolute;right:14px;bottom:18px;background:var(--g);color:#fff;font-size:10px;font-weight:600;padding:9px 13px;border-radius:12px}
-  .dark{background:#0f1714;color:#fff}
-  .frame{position:absolute;left:18px;right:18px;top:150px;height:140px;border-radius:10px;background:linear-gradient(135deg,#1d2622,#151d1a)}
-  .frame i{position:absolute;width:22px;height:22px;border:2.5px solid #fff}
-  .frame i:nth-of-type(1){left:-2px;top:-2px;border-right:0;border-bottom:0;border-radius:8px 0 0 0}
-  .frame i:nth-of-type(2){right:-2px;top:-2px;border-left:0;border-bottom:0;border-radius:0 8px 0 0}
-  .frame i:nth-of-type(3){left:-2px;bottom:-2px;border-right:0;border-top:0;border-radius:0 0 0 8px}
-  .frame i:nth-of-type(4){right:-2px;bottom:-2px;border-left:0;border-top:0;border-radius:0 0 8px 0}
-  .scanline{position:absolute;left:8px;right:8px;top:55%;height:2px;background:#6fd3a8;box-shadow:0 0 14px 3px rgba(111,211,168,.6)}
-  .card-mock{position:absolute;left:30px;right:30px;top:36px;bottom:36px;border-radius:4px;background:#e9e7e0;opacity:.13}
-  .hint{position:absolute;top:310px;left:0;right:0;text-align:center;font-size:9px;color:#c9d2ce}
-  .offline-pill{position:absolute;top:44px;left:50%;transform:translateX(-50%);font-size:8.5px;background:rgba(111,211,168,.15);color:#8fe0bd;padding:4px 10px;border-radius:20px;white-space:nowrap}
-  .shutter{position:absolute;bottom:40px;left:50%;margin-left:-28px;width:56px;height:56px;border-radius:50%;border:4px solid #fff}
-  .shutter:after{content:"";position:absolute;inset:4px;border-radius:50%;background:#fff}
-  .f{margin:0 14px 8px;border:1px solid #E6E5E0;border-radius:9px;padding:6px 9px;background:#fff}
-  .f label{display:block;font-size:7px;letter-spacing:.06em;text-transform:uppercase;color:#8a938f;font-weight:600}
-  .f div{font-size:10.5px}
-  .f.hl{background:#FFF8E3;border-color:var(--amber)}
-  .note{margin:0 14px 10px;background:var(--mint2);color:var(--g);font-size:8.5px;padding:7px 9px;border-radius:8px}
-  .pair{display:grid;grid-template-columns:1fr 1fr;gap:0}
-  .pair .f:first-child{margin-right:4px}.pair .f:last-child{margin-left:4px}
+  /* phones with real screenshots */
+  .phones{position:relative;height:600px}
+  .phone{position:absolute;width:270px;border-radius:40px;background:#0d1512;padding:9px;box-shadow:0 30px 60px -20px rgba(17,72,58,.35),0 0 0 1px rgba(0,0,0,.08)}
+  .phone img{display:block;width:100%;height:auto;border-radius:32px}
+  .p1{left:0;top:50px;transform:rotate(-5deg)}
+  .p2{left:50%;margin-left:-135px;top:0;z-index:2}
+  .p3{right:0;top:50px;transform:rotate(5deg)}
+  .shot{display:block;width:100%;height:auto;max-width:240px;margin:0 auto 22px;border-radius:22px;border:6px solid #0d1512;box-shadow:0 18px 40px -18px rgba(17,72,58,.4)}
 
   /* sections */
   section{padding:96px 0}
@@ -223,9 +197,9 @@
 
   @media (max-width:960px){
     .hero .wrap,.why .wrap{grid-template-columns:1fr}
-    .phones{height:480px;max-width:520px;margin:0 auto;width:100%}
-    .phone{width:210px;height:440px}
-    .p2{margin-left:-105px}
+    .phones{height:500px;max-width:560px;margin:0 auto;width:100%}
+    .phone{width:225px}
+    .p2{margin-left:-112px}
     .feats{grid-template-columns:repeat(2,1fr)}
     .steps,.who{grid-template-columns:1fr}
     .summary .box{grid-template-columns:1fr;gap:10px}
@@ -233,7 +207,7 @@
   }
   @media (max-width:560px){
     table{font-size:13px} th,td{padding:11px 9px} th{font-size:10px}
-    .phones{height:420px}
+    .phones{height:520px}
     .p1,.p3{display:none}
     .feats{grid-template-columns:1fr}
     section{padding:70px 0}
@@ -277,38 +251,10 @@
       </div>
     </div>
 
-    <div class="phones" aria-label="Ekrany aplikacji Wizytownik: lista kontaktów, skanowanie wizytówki i sprawdzanie danych">
-      <div class="phone p1"><div class="screen">
-        <div class="s-top">Kontakty</div>
-        <div class="s-search">Szukaj: imię, firma, e-mail…</div>
-        <div class="chips"><span class="chip on">Ubezpieczenia</span><span class="chip">Branża</span><span class="chip">Źródło</span></div>
-        <div class="row"><div class="av">AK</div><div><b>Anna Kowalska</b><span>Kowalska Ubezpieczenia</span><em class="tag">Ubezpieczenia</em></div></div>
-        <div class="row"><div class="av d">MN</div><div><b>Marek Nowak</b><span>ZAPP Aranżacje · Dyrektor handlowy</span><em class="tag">Aranżacja wnętrz</em></div></div>
-        <div class="row"><div class="av">PW</div><div><b>Piotr Wiśniewski</b><span>Wiśniewski &amp; Partnerzy</span><em class="tag">Prawo</em></div></div>
-        <div class="row"><div class="av">KZ</div><div><b>Katarzyna Zając</b><span>Studio Z Marketing</span><em class="tag">Marketing</em></div></div>
-        <div class="row"><div class="av">TL</div><div><b>Tomasz Lewandowski</b><span>BudCom Sp. z o.o.</span><em class="tag">Budownictwo</em></div></div>
-        <div class="fab">Skanuj</div>
-      </div></div>
-
-      <div class="phone p2"><div class="screen dark">
-        <div class="s-top" style="text-align:center;font-size:13px">Skanuj wizytówkę</div>
-        <div class="offline-pill">● Tryb offline · dane zostają w telefonie</div>
-        <div class="frame"><div class="card-mock"></div><i></i><i></i><i></i><i></i><div class="scanline"></div></div>
-        <div class="hint">Umieść wizytówkę w ramce</div>
-        <div class="shutter"></div>
-      </div></div>
-
-      <div class="phone p3"><div class="screen">
-        <div class="s-top">Sprawdź dane</div>
-        <div class="note">Dane rozpoznane automatycznie. Sprawdź i popraw przed zapisem.</div>
-        <div class="pair"><div class="f"><label>Imię</label><div>Marek</div></div><div class="f"><label>Nazwisko</label><div>Nowak</div></div></div>
-        <div class="f"><label>Firma</label><div>ZAPP Aranżacje</div></div>
-        <div class="f hl"><label>Stanowisko</label><div>Dyrektor handlowy</div></div>
-        <div class="f"><label>E-mail</label><div>m.nowak@zapparanzacje.pl</div></div>
-        <div class="f"><label>Telefon</label><div>+48 512 340 118</div></div>
-        <div class="f"><label>Adres</label><div>ul. Lipowa 12, 30-001 Kraków</div></div>
-        <div class="f"><label>Branża</label><div>Aranżacja wnętrz</div></div>
-      </div></div>
+    <div class="phones">
+      <div class="phone p1"><img src="wizytownik-lista-kontaktow.webp" width="600" height="1066" alt="Wizytownik - lista kontaktów z wyszukiwarką po nazwisku, firmie i branży"></div>
+      <div class="phone p2"><img src="wizytownik-skanowanie-wizytowki.webp" width="600" height="1066" alt="Wizytownik - skanowanie wizytówki aparatem telefonu, bez internetu"></div>
+      <div class="phone p3"><img src="wizytownik-karta-ze-skanem.webp" width="600" height="1066" alt="Wizytownik - karta kontaktu z danymi odczytanymi z wizytówki i jej zdjęciem"></div>
     </div>
   </div>
 </header>
@@ -328,9 +274,9 @@
     <h2>Od wizytówki do kontaktu w kilkanaście sekund</h2>
     <p class="lead">Bez przepisywania, bez wysyłania zdjęć na serwer i bez czekania na odpowiedź z chmury.</p>
     <div class="steps">
-      <div class="step"><div class="num">1</div><h3>Skanujesz</h3><p>Ustawiasz wizytówkę w ramce i robisz zdjęcie. Możesz też wybrać zdjęcie z galerii, na przykład całą serię zrobioną po spotkaniu.</p></div>
-      <div class="step"><div class="num">2</div><h3>Sprawdzasz</h3><p>Aplikacja rozkłada tekst na pola: imię, nazwisko, firmę, stanowisko, telefon, e-mail, stronę i adres. Poprawiasz, co trzeba, zanim cokolwiek się zapisze.</p></div>
-      <div class="step"><div class="num">3</div><h3>Masz kontakt</h3><p>Kontakt trafia do przeszukiwalnej bazy z branżą i zdjęciem wizytówki. Dzwonisz, piszesz albo dodajesz go do książki telefonu jednym dotknięciem.</p></div>
+      <div class="step"><img class="shot" src="wizytownik-skanowanie-wizytowki.webp" width="600" height="1066" loading="lazy" alt="Ekran skanowania wizytówki w aplikacji Wizytownik"><div class="num">1</div><h3>Skanujesz</h3><p>Ustawiasz wizytówkę w ramce i robisz zdjęcie. Tekst odczytuje model działający na Twoim telefonie, bez wysyłania zdjęcia na serwer.</p></div>
+      <div class="step"><img class="shot" src="wizytownik-odczyt-ocr.webp" width="600" height="1066" loading="lazy" alt="Odczyt OCR wizytówki w Wizytowniku - wiersze tekstu do wstawienia w pola kontaktu"><div class="num">2</div><h3>Sprawdzasz</h3><p>Aplikacja rozkłada tekst na pola: imię, nazwisko, firmę, stanowisko, telefon, e-mail, stronę i adres. Jeśli coś trafiło nie tam, dotykasz wiersz odczytu, potem pole, i treść jest na miejscu, zanim cokolwiek się zapisze.</p></div>
+      <div class="step"><img class="shot" src="wizytownik-karta-kontaktu.webp" width="600" height="1066" loading="lazy" alt="Karta kontaktu w Wizytowniku z przyciskami Zadzwoń, Mail, Eksport i Udostępnij"><div class="num">3</div><h3>Masz kontakt</h3><p>Kontakt trafia do przeszukiwalnej bazy z branżą i zdjęciem wizytówki. Dzwonisz, piszesz albo dodajesz go do książki telefonu jednym dotknięciem.</p></div>
     </div>
   </div>
 </section>
