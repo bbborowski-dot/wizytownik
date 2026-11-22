@@ -9,7 +9,7 @@
 - Dla kogo: networkerzy (BNI, konferencje), zawody zaufania publicznego (prawnicy, doradcy, księgowi, HR), handlowcy w terenie.
 
 ## Linki
-- [Strona aplikacji](https://bbborowski-dot.github.io/wizytownik/)
+- [Strona aplikacji](https://skanerwizytowek.pl/)
 - [Google Play](https://play.google.com/store/apps/details?id=pl.wizytownik.app)
 - [Polityka prywatności](https://bbborowski-dot.github.io/wizytownik-privacy/)
 - Kontakt: bb.borowski@gmail.com

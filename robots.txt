@@ -25,4 +25,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://bbborowski-dot.github.io/wizytownik/sitemap.xml
+Sitemap: https://skanerwizytowek.pl/sitemap.xml
